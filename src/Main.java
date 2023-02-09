@@ -18,7 +18,7 @@ public class Main {
         int startYear = nowYears - 200;
         int endYear = nowYears + 100;
         while (yearCount <= endYear) {
-            if ((yearCount>= startYear) && (yearCount % cometFlight == 0)) {
+            if ((yearCount >= startYear) && (yearCount % cometFlight == 0)) {
                 System.out.println(yearCount);
             }
             yearCount++;
@@ -39,7 +39,7 @@ public class Main {
 
     public static void task6() {
         System.out.println("Задача 6");
-        int deposit = 15000;
+        double deposit = 15000;
         int monthCount = 0;
         while (monthCount < 108) {
             monthCount++;
@@ -52,7 +52,7 @@ public class Main {
 
     public static void task5() {
         System.out.println("Задача 5");
-        int deposit = 15000;
+        double deposit = 15000;
         int monthCount = 0;
         while (deposit <= 12_000_000) {
             monthCount++;
@@ -65,7 +65,7 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задание 4");
-        int deposit = 15000;
+        double deposit = 15000;
         int monthCount = 0;
         while (deposit <= 12_000_000) {
             monthCount++;
@@ -89,16 +89,16 @@ public class Main {
 
     public static void task2() {
         System.out.println("Задание 2");
-        int i = 1;
-        for (; i <= 10; i++) {
+        int i = 0;
+        while (i < 10) {
+            i++;
             System.out.print(i + " ");
         }
         System.out.println();
-        while (i > 1) {
-            i--;
+        for (; i > 0; i--) {
             System.out.print(i + " ");
         }
-        System.out.println();
+
     }
 
     public static void task1() {
